@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_size">90dp</dimen>
+    <dimen name="btn_text_size">14sp</dimen>
+    <dimen name="btn_margin_outer">20dp</dimen>
+    <dimen name="btn_margin_inner">12dp</dimen>
+</resources>

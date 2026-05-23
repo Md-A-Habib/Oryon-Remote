@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- LEFT SIDE: Direction Buttons -->
+
+    <!-- Left Button -->
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="@dimen/btn_size"
+        android:layout_height="@dimen/btn_size"
+        android:text="LEFT"
+        android:textSize="@dimen/btn_text_size"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/btn_margin_outer"/>
+
+    <!-- Right Button -->
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="@dimen/btn_size"
+        android:layout_height="@dimen/btn_size"
+        android:text="RIGHT"
+        android:textSize="@dimen/btn_text_size"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/btnLeft"
+        android:layout_marginStart="@dimen/btn_margin_inner"/>
+
+    <!-- RIGHT SIDE: Brake and Gas Buttons -->
+
+    <!-- Gas Button -->
+    <Button
+        android:id="@+id/btnAccelerate"
+        android:layout_width="@dimen/btn_size"
+        android:layout_height="@dimen/btn_size"
+        android:text="GAS"
+        android:textSize="@dimen/btn_text_size"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/btn_margin_outer"/>
+
+    <!-- Brake Button -->
+    <Button
+        android:id="@+id/btnBrake"
+        android:layout_width="@dimen/btn_size"
+        android:layout_height="@dimen/btn_size"
+        android:text="BRAKE"
+        android:textSize="@dimen/btn_text_size"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/btnAccelerate"
+        android:layout_marginEnd="@dimen/btn_margin_inner"/>
+
+</RelativeLayout>
