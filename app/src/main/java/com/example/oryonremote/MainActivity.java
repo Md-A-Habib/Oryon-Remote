@@ -61,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
                     || event.getAction() == MotionEvent.ACTION_CANCEL) {
                 sendCommand("STOP");
             }
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        sendCommand("BACKWARD");}
             return true;
         });
 
